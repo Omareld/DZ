@@ -62,7 +62,9 @@ public class DZ1 {
              // С помощью Цикла пробегаемся по элементам 2-го массива
              for (int j =0; j <newName3[i].length; j++){
                  //Сравниваем диагональные элименты
-                 if (i == j) newName3[i][j]=1;
+                 if (i == j || newName3.length - j - 1 == i){
+                     newName3[i][j]=1;
+                 }
                   //Выводим элемент массива
                  System.out.print (newName3[i][j] + " ");
                  //С помощью If делаем вывод более красивым,
@@ -70,6 +72,7 @@ public class DZ1 {
                  if(j==newName3[i].length-1){
                      System.out.println();
                  }
+
 
              }
          }
